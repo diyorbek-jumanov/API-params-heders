@@ -7,4 +7,5 @@ paylod = {
     'nat': ['US', 'GB']
 }
 r = requests.get(url, paylod)
-print(r.url)
+data = r.json()
+print(data)
